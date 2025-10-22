@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codefolio Nexus | Resume</title>
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+        body {
+            font-family: 'Space Grotesk', sans-serif;
+            background-color: #111827;
+            color: #f3f4f6;
+        }
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -38px;
+            top: 0;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            background: #8b5cf6;
+        }
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 30px;
+            top: 0;
+            height: 100%;
+            width: 2px;
+            background: #374151;
+        }
+    </style>
+</head>
+<body>
+    <nav class="bg-gray-800 bg-opacity-80 backdrop-blur-md fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0 flex items-center">
+                        <i data-feather="code" class="text-purple-400 h-6 w-6"></i>
+                        <span class="ml-2 text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-600">Codefolio Nexus</span>
+                    </div>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="index.html" class="px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-700 transition duration-300">Home</a>
+                        <a href="resume.html" class="px-3 py-2 rounded-md text-sm font-medium bg-gray-700 text-white">Resume</a>
+                        <a href="index.html#projects" class="px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-700 transition duration-300">Projects</a>
+                        <a href="index.html#contact" class="px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-700 transition duration-300">Contact</a>
+                    </div>
+                </div>
+                <div class="md:hidden">
+                    <button id="menu-btn" class="text-gray-300 hover:text-white focus:outline-none">
+                        <i data-feather="menu" class="h-6 w-6"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-gray-800 bg-opacity-90">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="index.html" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-700 transition duration-300">Home</a>
+                <a href="resume.html" class="block px-3 py-2 rounded-md text-base font-medium bg-gray-700 text-white">Resume</a>
+                <a href="index.html#projects" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-700 transition duration-300">Projects</a>
+                <a href="index.html#contact" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-700 transition duration-300">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="pt-32 pb-20 px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto">
+        <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-12">
+            <div>
+                <h1 class="text-4xl font-extrabold tracking-tight mb-2 bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-600">Dev Genius</h1>
+                <p class="text-xl text-gray-300">Full Stack Developer</p>
+            </div>
+            <div class="mt-4 md:mt-0">
+                <a href="#" class="inline-flex items-center px-4 py-2 border border-purple-500 text-purple-400 hover:bg-purple-900 hover:bg-opacity-30 rounded-md font-medium transition duration-300">
+                    <i data-feather="download" class="mr-2"></i> Download PDF
+                </a>
+            </div>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="md:col-span-2">
+                <section class="mb-12">
+                    <h2 class="text-2xl font-bold mb-6 flex items-center">
+                        <i data-feather="briefcase" class="mr-2 text-purple-400"></i> Work Experience
+                    </h2>
+                    <div class="relative pl-16 timeline">
+                        <div class="relative mb-8 timeline-item">
+                            <h3 class="text-xl font-bold">Senior Full Stack Developer</h3>
+                            <p class="text-gray-400 mb-2">TechCorp Inc. • 2020 - Present</p>
+                            <ul class="list-disc pl-5 text-gray-300 space-y-2">
+                                <li>Led development of e-commerce platform with React and Node.js</li>
+                                <li>Implemented CI/CD pipelines reducing deployment time by 40%</li>
+                                <li>Mentored junior developers and conducted code reviews</li>
+                            </ul>
+                        </div>
+                        <div class="relative mb-8 timeline-item">
+                            <h3 class="text-xl font-bold">Frontend Developer</h3>
+                            <p class="text-gray-400 mb-2">Digital Solutions • 2018 - 2020</p>
+                            <ul class="list-disc pl-5 text-gray-300 space-y-2">
+                                <li>Built responsive UIs with Vue.js and Tailwind CSS</li>
+                                <li>Improved page load performance by 30%</li>
+                                <li>Collaborated with UX team on design system implementation</li>
+                            </ul>
+                        </div>
+                        <div class="relative timeline-item">
+                            <h3 class="text-xl font-bold">Junior Developer</h3>
+                            <p class="text-gray-400 mb-2">WebStart Agency • 2016 - 2018</p>
+                            <ul class="list-disc pl-5 text-gray-300 space-y-2">
+                                <li>Developed WordPress themes and plugins</li>
+                                <li>Implemented custom JavaScript solutions for clients</li>
+                                <li>Worked on SEO optimization and accessibility improvements</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="mb-12">
+                    <h2 class="text-2xl font-bold mb-6 flex items-center">
+                        <i data-feather="award" class="mr-2 text-purple-400"></i> Education
+                    </h2>
+                    <div class="relative pl-16 timeline">
+                        <div class="relative timeline-item">
+                            <h3 class="text-xl font-bold">BSc in Computer Science</h3>
+                            <p class="text-gray-400 mb-2">Tech University • 2012 - 2016</p>
+                            <ul class="list-disc pl-5 text-gray-300 space-y-2">
+                                <li>Specialized in Web Technologies and Software Engineering</li>
+                                <li>Graduated with honors (GPA: 3.8/4.0)</li>
+                                <li>Capstone project: AI-powered recommendation engine</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <div>
+                <section class="mb-8 bg-gray-800 bg-opacity-70 backdrop-blur-sm rounded-xl p-6">
+                    <h2 class="text-xl font-bold mb-4 flex items-center">
+                        <i data-feather="user" class="mr-2 text-purple-400"></i> Contact
+                    </h2>
+                    <div class="space-y-3 text-gray-300">
+                        <p class="flex items-center"><i data-feather="mail" class="mr-2 text-purple-400"></i> dev@example.com</p>
+                        <p class="flex items-center"><i data-feather="phone" class="mr-2 text-purple-400"></i> (123) 456-7890</p>
+                        <p class="flex items-center"><i data-feather="map-pin" class="mr-2 text-purple-400"></i> San Francisco, CA</p>
+                        <p class="flex items-center"><i data-feather="globe" class="mr-2 text-purple-400"></i> devgenius.io</p>
+                    </div>
+                </section>
+
+                <section class="mb-8 bg-gray-800 bg-opacity-70 backdrop-blur-sm rounded-xl p-6">
+                    <h2 class="text-xl font-bold mb-4 flex items-center">
+                        <i data-feather="tool" class="mr-2 text-purple-400"></i> Skills
+                    </h2>
+                    <div class="space-y-3">
+                        <div>
+                            <h3 class="font-medium text-gray-300">Languages</h3>
+                            <p class="text-sm text-gray-400">JavaScript, TypeScript, Python, HTML/CSS</p>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-gray-300">Frameworks</h3>
+                            <p class="text-sm text-gray-400">React, Vue.js, Node.js, Express, Django</p>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-gray-300">Tools</h3>
+                            <p class="text-sm text-gray-400">Git, Docker, AWS, Figma, Jest</p>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-gray-300">Databases</h3>
+                            <p class="text-sm text-gray-400">MongoDB, PostgreSQL, Firebase</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="bg-gray-800 bg-opacity-70 backdrop-blur-sm rounded-xl p-6">
+                    <h2 class="text-xl font-bold mb-4 flex items-center">
+                        <i data-feather="zap" class="mr-2 text-purple-400"></i> Certifications
+                    </h2>
+                    <div class="space-y-4">
+                        <div>
+                            <h3 class="font-medium text-gray-300">AWS Certified Developer</h3>
+                            <p class="text-sm text-gray-400">2021</p>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-gray-300">Google Cloud Professional</h3>
+                            <p class="text-sm text-gray-400">2020</p>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-gray-300">Scrum Master</h3>
+                            <p class="text-sm text-gray-400">2019</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-gray-800 bg-opacity-80 backdrop-blur-md py-8 mt-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="flex items-center mb-4 md:mb-0">
+                    <i data-feather="code" class="text-purple-400 h-6 w-6"></i>
+                    <span class="ml-2 text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-600">Codefolio Nexus</span>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-purple-400 transition duration-300">
+                        <i data-feather="github"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-purple-400 transition duration-300">
+                        <i data-feather="twitter"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-purple-400 transition duration-300">
+                        <i data-feather="linkedin"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="mt-8 border-t border-gray-700 pt-8 md:flex md:items-center md:justify-between">
+                <p class="text-base text-gray-400 text-center md:text-left">
+                    &copy; 2023 Codefolio Nexus. All rights reserved.
+                </p>
+                <div class="mt-4 md:mt-0">
+                    <p class="text-base text-gray-400 text-center md:text-right">
+                        Built with <i data-feather="heart" class="text-pink-500 inline"></i> and JavaScript
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('menu-btn').addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+
+        // Close mobile menu when clicking a link
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.getElementById('mobile-menu').classList.add('hidden');
+            });
+        });
+
+        // Feather icons replacement
+        document.addEventListener('DOMContentLoaded', function() {
+            feather.replace();
+        });
+    </script>
+    <script>feather.replace();</script>
+</body>
+</html>
